@@ -1,0 +1,53 @@
+# Some garbage from container installation process
+src/*.deb*
+
+# Error files from tests
+src/tests/sample_files/.error*
+
+# Local configurations
+.venv/
+venv/
+.vscode/
+*.code-workspace
+*.uploads/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Do not add extra test files
+test_files/ecad.fonograma.*.xls
+.uploads/*
+
+# Lock files
+*.~lock*
+
+.pytest_cache
+# coverage testing data
+
+.coverage
