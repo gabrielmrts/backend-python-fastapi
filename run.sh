@@ -1,10 +1,14 @@
 #!/bin/bash
 
-install_deps () {
+install_dependencies () {
 	echo "Installing dependencies ... "
 	pip install -r requirements.txt -q
 	echo "Installing Dev depencies ... "
 	pip install -r requirements_dev.txt -q
+}
+
+run_docker() {
+	docker compose up -d --force-recreate
 }
 
 run() {
@@ -12,7 +16,9 @@ run() {
 }
 
 start() {
-    install_deps
+    install_dependencies
+	run_docker
+	sleep 5
     run
 }
 
